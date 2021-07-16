@@ -1,0 +1,260 @@
+@import url(https://fontawesome.com);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* ********************* */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(217, 28%, 15%);
+    font-family: "open sans", sans-serif;
+}
+h2, h3, h4, h5{ 
+    font-family: "raleway", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+li{list-style: none;}
+p{ 
+    font-family: "open sans", sans-serif; 
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* header STYLES */
+#wrapper1{
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin: 10px 10px;
+}
+.logo{
+    width: 100px;
+    height: 30px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+@media (min-width: 468px) {
+    #wrapper1{
+        grid-template-columns: 50% auto;
+    }
+    .logo{
+        width: 100px;
+        height: 30px;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
+}
+
+
+/* firstSection STYLES */
+.intro{
+    margin: 0 10px;
+}
+.hero{
+    width: 100%;
+}
+.content1{
+    text-align: center;
+    margin: 0 10px;
+}
+.get{
+    text-decoration: none;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 20px;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 50px;
+}
+.btn{
+    margin-top: 20px;
+}
+@media (min-width: 650px){
+    .intro{
+        width: 50%;
+        margin: 0 25%;
+    }
+    .content1{
+        margin: 0 30%;
+    }
+}
+
+
+/* secondSection STYLES*/
+.content2{
+    text-align: center;
+    margin: 50px 10px;
+}
+.icon{
+    width: 50px;
+}
+.iconsec{
+    width: 35px;
+}
+.box{
+    padding-top: 20px;
+}
+@media (min-width: 650px){
+    .content2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 50%);
+        margin: 30px 10%;
+    }
+}
+
+
+/* thirdSection STYLES*/
+#wrapper4{
+    margin: 100px 20px;
+}
+.hero1{
+    width: 100%;
+}
+.content3{
+    text-align: justify;
+}
+.works{
+    text-decoration: none;
+    color: hsl(198, 60%, 50%);
+    font-size: 14px;
+    border-bottom: 1.8px solid;
+    padding-bottom: 2px;
+}
+@media (min-width: 650px){
+    #wrapper4{
+        display: flex;
+        margin: 100px 10px;
+    }
+    .content3{
+        padding: 5%;
+    }
+    .wrap4{
+        margin-top: 30px;
+    }
+}
+
+
+/* thirdSection STYLES*/
+#wrapper5{
+    margin: 40px;
+}
+.quote{
+    width: 30px;
+}
+.content4{
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.profile1{
+    width: 40px;
+    border-radius: 30px;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+.desc, span{
+    display: block;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
+@media (min-width: 650px){
+    #wrapper5{
+        margin: 0 10%;
+    }
+    .flex{
+        display: flex;
+    }
+    .content4{
+        margin: 0 15px;
+    }
+}
+
+
+/* fourthSection STYLES*/
+#wrapper6{
+    background-color: hsl(217, 28%, 15%);
+    margin: 100px 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px hsl(219, 29%, 12%);
+    text-align: center;
+    padding: 25px;
+}
+.email{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.get1{
+    text-decoration: none;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 20px;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 35px;
+}
+@media (min-width: 650px){
+    #wrapper6{
+        margin: 100px 20%;
+    }
+    .mail{
+        display: grid;
+        grid-template-columns: auto 185px;
+    }
+    .get1{
+        padding: 10px 10px;
+    }
+    .btn{
+        margin: 8px 0;
+    }
+    .email{
+        padding: 10px 10px;
+    }
+}
+
+
+/* footer STYLES*/
+#footer{
+    margin: 20px;
+}
+.footer-location{
+    display: grid;
+    grid-template-columns: 25px auto;
+    padding-top: 10px;
+}
+.contact{
+    display: inline;
+}
+.links, .contact{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    line-height: 30px;
+    font-size: 14px;
+}
+.logo2{width: 14px;}
+@media (min-width: 650px){
+    #footer{
+        margin: 0 15%;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+    }
+    .ft-grp{
+        padding-top: 10px;
+    }
+
+    /* styling for call and gmail footer contact*/
+    .ic-ph, .ic-em{
+        margin-top: 5px;
+    }
+}    
